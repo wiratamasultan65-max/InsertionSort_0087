@@ -4,11 +4,6 @@ using namespace std;
 int arr[20];
 int n;
 
-int main()
-{
-
-}
-
 void input()
 {
     while (true)
@@ -37,7 +32,7 @@ void input()
 }
 
 void insertionsort()
-{// procedure insertionsort
+{
     int temp;
     int j;
 
@@ -53,6 +48,7 @@ void insertionsort()
         }
 
         arr[j + 1] = temp;
+
         cout << "\nStep " << i << " : ";
         for (int k = 0; k < n; k++)
         {
