@@ -9,8 +9,10 @@ int main()
 
 }
 
-void input(){
-    while (true){
+void input()
+{
+    while (true)
+    {
         cout << "Masukan Jumlah Data Pada Array : ";
         cin >> n;
 
@@ -27,7 +29,8 @@ void input(){
     cout << "\n=======Masukan Element Array========";
     cout << "\n====================================";
 
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         cout << "Data ke-" << (i+1) << " : ";
         cin >> arr[i];
     }
@@ -38,11 +41,13 @@ void insertionsort()
     int temp;
     int j;
 
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         temp = arr[i];
         j = i - 1;
 
-        while (j >= 0 && arr[j] > temp){
+        while (j >= 0 && arr[j] > temp)
+        {
             arr[j + 1] = arr[j];
             j--;
         }
@@ -63,9 +68,18 @@ void display()
     cout << "\nElement Array" << endl;
     cout << "\n====================";
 
-    for (int j = 0; j < n; j++){
+    for (int j = 0; j < n; j++)
+    {
         cout << arr[j] << endl;
     }
 
     cout << endl;
+}
+
+int main()
+{
+    input();
+    insertionsort();
+    display();
+    system("pause");
 }
